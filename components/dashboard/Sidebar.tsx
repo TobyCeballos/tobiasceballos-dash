@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className={`fixed inset-y-0 left-0 z-50 w-64 bg-gray-800 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0`}>
       <div className="flex items-center justify-between p-4">
         <h1 className="text-xl font-bold">Panel de control</h1>
-        <button variant="ghost" size="icon" onClick={() => setSidebarOpen(false)} className="lg:hidden">
+        <button onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden">
           <Menu className="h-6 w-6" />
         </button>
       </div>
