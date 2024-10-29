@@ -100,7 +100,7 @@ const pricingPlans = [
 ]
 
 export default function Dashboard() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [alertsEnabled, setAlertsEnabled] = useState(false)
@@ -123,7 +123,7 @@ export default function Dashboard() {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    if (username === 'admin' && password === 'password') {
+    if (username === 'tobiasceo' && password === 'ceo544486') {
       setIsLoggedIn(true)
     } else {
       alert('Credenciales incorrectas')
